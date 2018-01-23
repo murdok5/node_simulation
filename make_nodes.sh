@@ -10,7 +10,7 @@ end_num=50
 for i in "${arr[@]}"; do
   n=$start_num
   while [[ $n -lt $end_num ]]; do
-    node="$i-$n.pdx.puppet.vm"
+    node="$i-$n.inf.puppet.vm"
     echo "useradd $node"
     echo "cd /home/$node"
     echo "su - $node -c 'mkdir -p .puppetlabs/etc/puppet'"
